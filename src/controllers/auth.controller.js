@@ -11,7 +11,7 @@ const register = async (req, res) => {
   }
 };
 
-const login = async (req, res) => {
+const login = async (req, res) => { 
   try {
     const data = await authService.login(req.body);
     res.json(data);
